@@ -1,0 +1,14 @@
+{
+  "name": "paypal-dispute-proxy",
+  "version": "1.0.0",
+  "description": "GCP Cloud Function proxy to handle PayPal multipart evidence uploads for n8n",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @google-cloud/functions-framework --target=submitPaypalEvidence"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  }
+}
